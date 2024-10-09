@@ -20,8 +20,11 @@ body {
     color: #635A4E;
 }
 
+/* titles for about/benefits/showcase */
 h2 {
-    color: #bb333d;;
+    color: #bb333d;
+    font-family: 'Cormorant Garamond';
+
 }
 
 .header-links{
