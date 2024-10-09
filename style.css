@@ -13,3 +13,36 @@
 .offWhite{
     color: #FFFBEF;
 }
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #FCF2D7;
+    color: #635A4E;
+}
+
+h2 {
+    color: #bb333d;;
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px;
+}
+
+.left-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-links{
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    font-weight: bold;
+    color: #635A4E;
+    text-decoration: none;
+}
