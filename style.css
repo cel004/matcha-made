@@ -192,6 +192,7 @@ ul li::before {
     display: flex;
     justify-content: space-around;
     margin: 50px;
+    
 }
 
 .showcase-div {
@@ -199,6 +200,9 @@ ul li::before {
     display: flex;
     gap: 40px;
     align-items: center;
+
+    max-width: 1800px;
+    flex-wrap: wrap;
 }
 
 .matcha-description {
@@ -213,6 +217,15 @@ ul li::before {
     display: flex;
     margin: auto;
     align-items: center;
+}
+
+.row-2 {
+    padding-left: 202px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 60px;
+    max-width: 1800px;
 }
 
 .product-name{
