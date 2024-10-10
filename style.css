@@ -4,6 +4,9 @@
 .green{
     color: #a0b464;
 }
+.greenText{
+    color: #7b9e43;
+}
 .beige{
     color: #FCF2D7;
 }
@@ -29,7 +32,7 @@ body {
 h2 {
     color: #bb333d;
     font-family: 'Cormorant Garamond';
-    font-size: 46px;
+    font-size: 54px;
     writing-mode: vertical-rl;
     text-orientation: upright;
 
@@ -58,7 +61,7 @@ h2 {
 /* big quote area (midsection?) */
 .main {
     font-size: 54px;
-    padding: 100px;
+    margin: 100px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -74,7 +77,11 @@ a {
 /* list customization */
 
 li {
+    line-height: 2;
+    font-size: 18px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* before item list */
@@ -108,25 +115,36 @@ ul li::before {
 
 /* about and benefits   */
 .about-benefits {
+
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 150px;
+    gap: 0;
 }
 
-.about-div,
-.benefits-div {
+.about-div {
+    margin: auto;
     display: flex;
     max-width: 500px;
+    margin-left: 200px;
+}
+.benefits-div {
+    margin-right: 400px;
+    display: flex;
+    max-width: 700px;
 }
 
 .listBenefits {
     display: flex;
+    margin: auto;
     justify-content: center;
-    text-align: justify; 
+
 }
 
-.about,
-.listBenefits {
+.about {
+    margin: auto;
     text-align: justify; 
+    font-size: 18px;;
 }
 
 /* footer */
