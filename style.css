@@ -230,10 +230,23 @@ ul li::before {
     max-width: 100%;
 }
 
-.stats {
+.stats-and-stars {
+    display: flex;
+}
+.stats,
+.stars {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
+
+.stats p,
+.stars p {
+    /* adjusts top and bottom margin negatively */
+    margin: -1px 0; 
+}
+
+
 
 .description-title {
     display: flex;
