@@ -35,6 +35,7 @@ h2 {
 
 }
 
+/* green header with logo and links */
 .header{
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,7 @@ h2 {
     gap: 75px;
 }
 
+/* big quote area (midsection?) */
 .main {
     font-size: 54px;
     padding: 100px;
@@ -69,9 +71,13 @@ a {
     text-decoration: none;
 }
 
+/* list customization */
+
 li {
     list-style: none;
 }
+
+/* before item list */
 ul li::before {
     content: "✤ ";
     color: #bb333d;
@@ -79,6 +85,7 @@ ul li::before {
 
 }
 
+/* hover text transition */
 .hover-container {
     position: relative;
     width: 200px;
@@ -99,6 +106,7 @@ ul li::before {
     max-height: 500px;
 }
 
+/* about and benefits   */
 .about-benefits {
     display: flex;
     justify-content: center;
@@ -121,13 +129,7 @@ ul li::before {
     text-align: justify; 
 }
 
-
-
-
-
-
-
-
+/* footer */
 .footer{
     display: flex;
     justify-content: center;
