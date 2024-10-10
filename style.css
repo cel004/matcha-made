@@ -47,18 +47,19 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: #a0b464;
+    padding-bottom: 10px;
 
 }
 
 .left-items{
     padding-left: 20px;
     display: flex;
-    margin: 30px;
+    margin: 50px;
 }
 
 .right-links{
     padding-right: 20px;
-    margin: 30px;
+    margin: 50px;
     display: flex;
     gap: 75px;
     font-size: 20px;
@@ -128,7 +129,7 @@ h2 {
 }
 @keyframes typing {
     from { width: 0%; }
-    to { width: 67%; }
+    to { width: 76%; }
 }
 
 a {
