@@ -216,6 +216,8 @@ ul li::before {
 .product-name{
     text-align: center;
     width: 100%;
+    font-weight: bold;
+    font-size: 20px;
     
 }
 .attributes {
@@ -244,12 +246,14 @@ ul li::before {
 .stars p {
     /* adjusts top and bottom margin negatively */
     margin: -1px 0; 
+    font-weight: bold;
 }
 
 
 
 .description-title {
     display: flex;
+    font-size: 20px;
 }
 
 .description {
