@@ -68,6 +68,30 @@ h2 {
     font-weight: bold;
 }
 
+.quote {
+    display: inline-block;
+    text-align: center;
+}
+.quote {
+    display: inline-block;
+    width: fit-content;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #635A4E;
+    animation: 
+        typing 3.8s,
+        cursor 0.8s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; } 
+}
+@keyframes typing {
+    from { width: 0%; }
+    to { width: 76%; }
+}
+
 a {
     font-weight: bold;
     color: #FFFBEF;
