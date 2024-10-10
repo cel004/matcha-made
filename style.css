@@ -62,7 +62,8 @@ h2 {
 }
 
 /* big quote area (midsection?) */
-.main {
+.main,
+.main2 {
     font-size: 54px;
     margin: 100px;
     flex-wrap: wrap;
@@ -70,6 +71,12 @@ h2 {
     justify-content: center;
     font-weight: bold;
 }
+
+.main2 {
+    font-size: 46px;
+}
+
+
 
 .quote {
     display: inline-block;
@@ -182,6 +189,14 @@ ul li::before {
 .showcase {
     display: flex;
     justify-content: space-around;
+    margin: 50px;
+}
+
+.showcase-div {
+    margin-inline-end: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .matcha-description {
@@ -193,35 +208,42 @@ ul li::before {
     
 }
 .container {
-    gap: 50px;
     display: flex;
-    
+    margin: auto;
+    align-items: center;
 }
 
 .product-name{
-    border-bottom: 2px solid #635A4E;
+    text-align: center;
+    width: 100%;
     
 }
 .attributes {
-    padding: 100px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: 2px solid #635A4E;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: auto;
     flex-direction: column;
     max-width: 200px;
+    max-width: 100%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
 }
 
 .description-title {
     display: flex;
 }
 
-.product-description {
+.description {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 400px;
     text-align: justify;
     
 }
