@@ -48,14 +48,17 @@ h2 {
 }
 
 .left-items{
+    padding-left: 20px;
     display: flex;
     margin: 30px;
 }
 
 .right-links{
+    padding-right: 20px;
     margin: 30px;
     display: flex;
     gap: 75px;
+    font-size: 20px;
 }
 
 /* big quote area (midsection?) */
@@ -174,6 +177,54 @@ ul li::before {
     font-size: 18px;;
 }
 
+/* container for matcha */
+
+.showcase {
+    display: flex;
+    justify-content: space-around;
+}
+
+.matcha-description {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    
+    
+}
+.container {
+    gap: 50px;
+    display: flex;
+    
+}
+
+.product-name{
+    border-bottom: 2px solid #635A4E;
+    
+}
+.attributes {
+    padding: 100px;
+    border: 2px solid #635A4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.description-title {
+    display: flex;
+}
+
+.product-description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    text-align: justify;
+    
+}
 /* footer */
 .footer{
     display: flex;
