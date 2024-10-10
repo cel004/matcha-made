@@ -26,6 +26,9 @@ body {
     font-family: 'Baloo 2', sans-serif;
     background-color: #FCF2D7;
     color: #635A4E;
+
+    /* hides horizontal scroll bar */
+    overflow-x: hidden;
 }
 
 /* titles for about/benefits/showcase */
@@ -66,9 +69,25 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -20px;
+    margin-top: -18px;
 }
 
+.lace-trim-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+    z-index: 1;
+}
+
+.lace-trim-container img,
+.lace-trim-footer-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+
+}
 /* big quote area (midsection?) */
 .main,
 .main2 {
