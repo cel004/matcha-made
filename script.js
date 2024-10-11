@@ -12,8 +12,6 @@ for (let i = 0; i < imageCount; i++){
     container.appendChild(img);
 }
 
-// reference to container
-
 const imageUrlFooter = "/assets/lace-trim-footer.png";
 const footerContainer = document.querySelector('.lace-trim-footer-container')
 
@@ -24,3 +22,32 @@ for (let i = 0; i < imageCount; i++){
     img.style.height = "auto";
     footerContainer.appendChild(img);
 }
+
+let state = false;
+let button = document.querySelector(".button");
+let record = document.querySelector(".record");
+let toneArm = document.querySelector(".tone-arm");
+let song = document.querySelector(".my-song");
+let slider = document.querySelector(".slider");
+
+button.addEventListener("click", () => {
+  if (state == false) {
+    record.classList.add("on");
+    toneArm.classList.add("play");
+    setTimeout(() => {
+      song.play();
+    }, 1000);
+  } else {
+    record.classList.remove("on");
+    toneArm.classList.remove("play");
+    song.pause();
+  }
+  state = !state;
+});
+
+window.addEventListener("load", () => {
+    song.volume = 0.1;
+  });
+slider.addEventListener("input", (e) => {
+  song.volume = Number(e.target.value);
+    });

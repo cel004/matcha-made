@@ -43,6 +43,7 @@ h2 {
 
 /* green header with logo and links */
 .header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,10 +52,23 @@ h2 {
 
 }
 
+.playerdiv {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+}
+
+img {
+    position: relative;
+    height: auto;
+    width: 90px;
+}
+
 .left-items{
     padding-left: 20px;
     display: flex;
     margin: 50px;
+    justify-content: space-between;
 }
 
 .right-links{
@@ -87,8 +101,9 @@ h2 {
     height: auto;
     display: block;
     overflow: hidden;
-
 }
+
+
 /* big quote area (midsection?) */
 .main,
 .main2 {
