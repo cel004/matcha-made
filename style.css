@@ -73,8 +73,9 @@ h2 {
     padding-right: 200px;
     margin: 50px;
     display: flex;
-    gap: 75px;
+    gap: 60px;
     font-size: 20px;
+    justify-content: center;
     
 }
 
@@ -83,6 +84,8 @@ h2 {
     align-items: center;
     justify-content: center;
     margin-top: -18px;
+    filter: drop-shadow(1px 1px 2px #635a4e3b);
+
 }
 
 .lace-trim-footer-container {
@@ -91,6 +94,8 @@ h2 {
     justify-content: center;
     margin-bottom: -10px;
     z-index: 1;
+    filter: drop-shadow(1px 1px 2px #635a4e3b);
+
 }
 
 .lace-trim-container img,
@@ -146,7 +151,7 @@ h2 {
 }
 
 a {
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     color: #FFFBEF;
 
@@ -282,6 +287,11 @@ ul li::before {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.matcha {
+    /* (offset-x offset-y blur-radius) */
+    filter: drop-shadow(2px 2px 3px #635A4E);
+}
 .attributes {
     padding-top: 10px;
     padding-left: 30px;
@@ -338,10 +348,16 @@ ul li::before {
 /* footer */
 .footer{
     display: flex;
-    justify-content: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #bb333d;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    font-weight: 600;
+    color: #FFFBEF;
     align-items: center;
     gap: 50px;
-    font-weight: bold;
-    color: #FFFBEF;
-    background-color: #bb333d;
 }

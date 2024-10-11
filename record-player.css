@@ -1,7 +1,9 @@
 
 .playerdiv {
-    transform: scale(0.5);
+    transform: scale(0.42);
     transform-origin: top left;
+    filter: drop-shadow(2px 2px 5px #635A4E);
+
 }
 
 
@@ -14,7 +16,7 @@
   left: 50%;
   top: 50%;
   border-radius: 8px;
-  box-shadow: 0 8px 0 0 #ccbf99;
+  box-shadow: 0 8px 0 0 #c4b68e;
 }
 .record {
   height: 175px;
@@ -49,7 +51,7 @@
   background-color: #181312;
   height: 15px;
   width: 15px;
-  border: 20px solid #85974d;
+  border: 20px solid #90ac65;
   border-radius: 50%;
 }
 .tone-arm {
