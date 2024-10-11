@@ -43,36 +43,34 @@ h2 {
 
 /* green header with logo and links */
 .header{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #a0b464;
     padding-bottom: 10px;
+    max-height: 130px;
 
 }
 
 .playerdiv {
     position: absolute;
-    top: 50%;
-    right: 150px;
+    right: 120px;
 }
 
-img {
-    position: relative;
+.logo {
     height: auto;
     width: 90px;
 }
 
 .left-items{
-    padding-left: 20px;
+    padding: 0;
     display: flex;
-    margin: 50px;
+    margin: 30px;
     justify-content: space-between;
 }
 
 .right-links{
-    padding-right: 20px;
+    padding-right: 200px;
     margin: 50px;
     display: flex;
     gap: 75px;
