@@ -23,6 +23,30 @@ for (let i = 0; i < imageCount; i++){
     footerContainer.appendChild(img);
 }
 
+const imageUrlMid = "/assets/lace-trim-header.png";
+const midContainer = document.querySelector('.midsection-lace')
+
+for (let i = 0; i < imageCount; i++){
+    const img = document.createElement('img');
+    img.src = imageUrlMid;
+    img.style.width = "100%";
+    img.style.height = "auto";
+    midContainer.appendChild(img);
+}
+
+const imageUrlLabel = "/assets/lace-label.png";
+const laceContainer = document.querySelector('.lace-label')
+
+for (let i = 0; i < 10; i++){
+    const img = document.createElement('img');
+    img.src = imageUrlLabel;
+    img.style.width = "100%";
+    img.style.height = "auto";
+    laceContainer.appendChild(img);
+}
+
+
+
 let state = false;
 let button = document.querySelector(".button");
 let record = document.querySelector(".record");
