@@ -14,8 +14,6 @@ recipes
 scroll down to fade in
 - showcase
 
-lace label
-- center text within it
 
   make:
   - other pages
