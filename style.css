@@ -235,8 +235,8 @@ a {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
-    border-radius: 4px;
+    height: 2.5px;
+    border-radius: 10px;
     background-color: #FFFBEF;
     bottom: 0;
     left: 0;
@@ -258,7 +258,6 @@ a {
 .recipes a:hover, 
 .suggestions a:hover {
     color: #FFFBEF;
-    position: relative; /* Ensure pseudo-element positioning works */
 }
 
 
@@ -454,6 +453,10 @@ ul li::before {
     text-align: justify;
     
 }
+.buy {
+    position: relative;
+    display: inline-block; 
+}
 
 .buy a {
     color: #635A4E;
@@ -461,9 +464,39 @@ ul li::before {
     max-width: 100px;
     border-radius: 5px;
     text-align: center;
-
     padding: 0 10px;
+    
+    position: relative;
+    z-index: 1;
+    transition: 300ms;
+
+    transition: 300ms;
 }
+
+.buy a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background: #635A4E; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    transition: transform 500ms ease; 
+    transform-origin: right; 
+    transform: scaleX(0); 
+}
+
+.buy a:hover::before {
+    transform-origin: left;
+    transition: transform 500ms ease;
+    transform: scaleX(1);
+}
+
+.buy a:hover {
+    color: #FCF2D7;
+}
+
 /* footer */
 .footer{
     display: flex;
