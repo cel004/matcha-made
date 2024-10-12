@@ -38,6 +38,7 @@ h2 {
     font-size: 54px;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    filter: drop-shadow(2px 2px 1px #635a4e81);
 
 }
 
@@ -127,23 +128,6 @@ h2 {
 
 }
 
-.lace-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -200px;
-    z-index: -1;
-    filter: drop-shadow(1px 1px 2px #635a4e3b);
-    width: 30%;
-    height: auto;
-
-
-}
-
-.lace-label img {
-    width: 100%;
-    height: auto;
-}
 
 .midsection-lace img {
     max-width: 100%;
@@ -161,8 +145,7 @@ h2 {
 
 
 /* big quote area (midsection?) */
-.main,
-.main2 {
+.main {
     font-size: 54px;
     margin: 100px;
     flex-wrap: wrap;
@@ -172,17 +155,45 @@ h2 {
     max-height: 300px;
 }
 
-.main2 {
-    font-size: 46px;
-    margin: 0;
-    padding-top: 120px;
+.quote-in-lace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+
+.lace-label {
+    width: 25%;
+    height: auto;
+}
+
+.lace-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    filter: drop-shadow(2px 2px 3px #635a4e50);
+    z-index: -20;
+    
 
 }
 
+.main2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    transform: translate(-25%, 25%);
+    filter: drop-shadow(1px 1px 1px #635a4e81);
+}
 
 .quote {
     display: inline-block;
     text-align: center;
+    filter: drop-shadow(1px 1px 1px #635a4e81);
 }
 .quote {
     display: inline-block;
