@@ -222,8 +222,47 @@ a {
     font-weight: 600;
     text-decoration: none;
     color: #FFFBEF;
+    
+}
+
+.right-links div {
+    position: relative;
+    overflow: hidden;
+}
+.home a::before,
+.recipes a::before,
+.suggestions a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #FFFBEF;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
 
 }
+
+.home a:hover::before,
+.recipes a:hover::before,
+.suggestions a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.home a:hover, 
+.recipes a:hover, 
+.suggestions a:hover {
+    color: #FFFBEF;
+    position: relative; /* Ensure pseudo-element positioning works */
+}
+
+
+
 
 /* list customization */
 
