@@ -29,6 +29,7 @@ body {
 
     /* hides horizontal scroll bar */
     overflow-x: hidden;
+    
 }
 
 /* titles for about/benefits/showcase */
@@ -77,6 +78,8 @@ h2 {
     gap: 60px;
     font-size: 20px;
     justify-content: center;
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
+
     
 }
 
@@ -93,7 +96,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -785px;
+    transform: translate(0, -51%);
     
     filter: drop-shadow(1px 1px 2px #635a4e3b);
     z-index: -20;
@@ -109,14 +112,14 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -1399px;
+    margin-bottom: 
     z-index: 1;
 
     height: auto;
     max-width: 100%;
-    
+    margin-top: -120px;
+    margin-bottom: 90px;
 }
-
 
 
 .lace-trim-footer-container {
@@ -175,7 +178,7 @@ h2 {
     justify-content: center;
     
     
-    filter: drop-shadow(2px 2px 3px #635a4e50);
+    filter: drop-shadow(2px 2px 2px #635a4e31);
     z-index: -20;
     
 
@@ -195,6 +198,7 @@ h2 {
     text-align: center;
     filter: drop-shadow(1px 1px 1px #635a4e81);
 }
+
 .quote {
     display: inline-block;
     width: fit-content;
@@ -244,6 +248,7 @@ ul li::before {
 .hover-container {
     position: relative;
     width: 200px;
+    overflow: hidden;
 }
 
 .hover-description {
@@ -251,6 +256,7 @@ ul li::before {
     overflow: hidden;
     transition: max-height 1.4s ease;
     text-align: justify; 
+
     
 }
 
@@ -272,6 +278,8 @@ ul li::before {
     padding-right: 150px;
     padding-left: 150px;
     gap: 0;
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
+
 }
 
 .about-div {
@@ -283,7 +291,7 @@ ul li::before {
 .benefits-div {
     margin-right: 400px;
     display: flex;
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 .listBenefits {
@@ -296,7 +304,8 @@ ul li::before {
 .about {
     margin: auto;
     text-align: justify; 
-    font-size: 18px;;
+    font-size: 18px;
+    
 }
 
 /* container for matcha */
@@ -324,6 +333,8 @@ ul li::before {
     justify-content: center;
     align-items: left;
     flex-direction: column;
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
+
     
     
 }
@@ -351,6 +362,8 @@ ul li::before {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    filter: drop-shadow(1px 1px 1px #635a4e81);
+    
 }
 
 .matcha {
@@ -392,6 +405,7 @@ ul li::before {
 .description-title {
     display: flex;
     font-size: 20px;
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
 }
 
 .description {
@@ -409,21 +423,22 @@ ul li::before {
     max-width: 100px;
     border-radius: 5px;
     text-align: center;
+
     padding: 0 10px;
 }
 /* footer */
 .footer{
     display: flex;
-    padding: 10px;
-    justify-content: space-between;
+    font-weight: 600;
+    gap: 1500px;
+    justify-content: space-around;
+    align-items: center;
     background-color: #bb333d;
     width: 100%;
+    color: #FFFBEF;
 }
 
-.footer-text {
-    display: flex;
-    font-weight: 600;
-    color: #FFFBEF;
-    align-items: center;
-    gap: 50px;
+.copyright,
+.madewithlove {
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
 }
