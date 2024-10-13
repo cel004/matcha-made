@@ -1,5 +1,5 @@
 const imageCount = 4;
-const imageUrl = "/assets/lace-trim-header.png";
+const imageUrl = "../assets/lace-trim-header.png";
 
 // reference to container
 const container = document.querySelector('.lace-trim-container')
@@ -12,7 +12,7 @@ for (let i = 0; i < imageCount; i++){
     container.appendChild(img);
 }
 
-const imageUrlFooter = "/assets/lace-trim-footer.png";
+const imageUrlFooter = "../assets/lace-trim-footer.png";
 const footerContainer = document.querySelector('.lace-trim-footer-container')
 
 for (let i = 0; i < imageCount; i++){
@@ -23,7 +23,7 @@ for (let i = 0; i < imageCount; i++){
     footerContainer.appendChild(img);
 }
 
-const imageUrlMid = "/assets/lace-trim-header.png";
+const imageUrlMid = "../assets/lace-trim-header.png";
 const midContainer = document.querySelector('.midsection-lace')
 
 for (let i = 0; i < imageCount; i++){
@@ -34,7 +34,7 @@ for (let i = 0; i < imageCount; i++){
     midContainer.appendChild(img);
 }
 
-const imageUrlLabel = "/assets/lace-label.png";
+const imageUrlLabel = "../assets/lace-label.png";
 const laceContainer = document.querySelector('.lace-label')
 
 for (let i = 0; i < 10; i++){
