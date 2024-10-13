@@ -56,30 +56,32 @@
     
     <script src="../script.js"></script>
 
-    <div class="form-container">
+    <div class="form-div">
         <p>have a suggestion? let me know!</p>
             <form action="/submit" method="POST">
-                <div class="question">
-                    <div class="required"><label for="name">name:</label></div></div>
-                    <input type="text" id="name" name="name" required>
-                
+                <div class="form-container">
+                    <div class="question">
+                        <label for="name"><span class="red"><b>*</b></span> name:</label></div>
+                        <input type="text" id="name" name="name" required>
+                    
 
-                <div class="question">
-                    <label for="email">email:</label></div>
-                    <input type="email" id="email" name="email">
-                
+                    <div class="question">
+                        <label for="email">email:</label></div>
+                        <input type="email" id="email" name="email">
+                    
 
-                <div class="question">
-                    <div class="required"><label for="matcha-brand">matcha recommendation:</label></div></div>
-                    <input type="text" id="matcha-brand" name="matcha-brand" required>
-                
+                    <div class="question">
+                        <label for="matcha-brand"><span class="red"><b>*</b></span> matcha brand:</label></div>
+                        <input type="text" id="matcha-brand" name="matcha-brand" required>
+                    
 
-                <div class="question">
-                    <label for="matcha-link">product link:</label></div>
-                    <input type="text" id="matcha-brand" name="matcha-link">
-                
-                <div class="question">
-                <input type="submit" value="submit"></div>
+                    <div class="question">
+                        <label for="matcha-link">product link:</label></div>
+                        <input type="text" id="matcha-brand" name="matcha-link">
+                    
+                    <div class="question">
+                    <input type="submit" value="submit" class="customize-submit"></div>
+                </div>
 
             </form>
             

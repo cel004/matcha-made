@@ -516,16 +516,42 @@ ul li::before {
 
 /* SUGGESTTIONS */
 
-.form-container {
+.form-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
     padding: 100px;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 17px;
 }
 
+.form-div p {
+    font-size: 22px;
+}
+
+.form-container {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customize-submit {
+    margin-top: 15px;
+    background-color: #FCF2D7;
+    color: #635A4E;
+    border: 2px solid #635A4E;
+    max-width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 4px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
 
 
+}
 
 
