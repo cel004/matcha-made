@@ -230,7 +230,6 @@ a {
     overflow: hidden;
 }
 .home a::before,
-.recipes a::before,
 .suggestions a::before {
     content: "";
     position: absolute;
@@ -248,14 +247,12 @@ a {
 }
 
 .home a:hover::before,
-.recipes a:hover::before,
 .suggestions a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
 
 .home a:hover, 
-.recipes a:hover, 
 .suggestions a:hover {
     color: #FFFBEF;
 }
