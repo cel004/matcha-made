@@ -8,13 +8,7 @@ suggestions submission box
 - matcha brand
 - link
 
-recipes
-- tbd
-
 scroll down to fade in
 - showcase
 
 
-  make:
-  - other pages
-  - polish I Guess.

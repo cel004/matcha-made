@@ -513,3 +513,19 @@ ul li::before {
 .madewithlove {
     filter: drop-shadow(1px 1px 0.5px #635a4e81);
 }
+
+/* SUGGESTTIONS */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 100px;
+}
+
+
+
+
+
