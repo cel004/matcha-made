@@ -229,6 +229,7 @@ a {
     position: relative;
     overflow: hidden;
 }
+
 .home a::before,
 .suggestions a::before {
     content: "";
@@ -450,7 +451,8 @@ ul li::before {
     text-align: justify;
     
 }
-.buy {
+.buy,
+.submit-animation {
     position: relative;
     display: inline-block; 
 }
@@ -470,7 +472,16 @@ ul li::before {
     transition: 300ms;
 }
 
-.buy a::before {
+.submit-animation .submit-wrapper {
+    position: relative;
+    z-index: 1;
+    transition: 300ms;
+
+    transition: 300ms;
+}
+
+.buy a::before,
+.submit-animation input::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -484,13 +495,16 @@ ul li::before {
     transform: scaleX(0); 
 }
 
-.buy a:hover::before {
+.buy a:hover::before,
+.submit-animation .submit-wrapper::before{
     transform-origin: left;
     transition: transform 500ms ease;
     transform: scaleX(1);
 }
 
-.buy a:hover {
+.buy a:hover,
+.submit-animation .submit-wrapper:hover
+ {
     color: #FCF2D7;
 }
 
@@ -519,10 +533,11 @@ ul li::before {
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 100px;
     gap: 10px;
     font-weight: 600;
     font-size: 17px;
+    margin: auto;
+    margin-left: 150px;
 }
 
 .form-div p {
@@ -533,6 +548,7 @@ ul li::before {
     gap: 10px;
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(1px 1px 0.5px #635a4e81);
 }
 
 .customize-submit {
@@ -547,8 +563,25 @@ ul li::before {
     font-weight: bold;
     cursor: pointer;
     
-
-
 }
 
+.lmk {
+    font-size: 36px;
+    display: flex;
+    margin-left: 100px;
+}
 
+.title-form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    
+}
+
+.suggestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
