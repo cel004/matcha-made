@@ -1,5 +1,11 @@
 const imageCount = 4;
-const imageUrl = "./assets/lace-trim-header.png";
+
+let imageUrl;
+if (window.location.pathname.includes("suggestions.html")) {
+    imageUrl = "../assets/lace-trim-header.png"; // path for suggestions.html
+} else {
+    imageUrl = "./assets/lace-trim-header.png"; // path for index.html
+}
 
 // reference to container
 const container = document.querySelector('.lace-trim-container')
@@ -12,7 +18,13 @@ for (let i = 0; i < imageCount; i++){
     container.appendChild(img);
 }
 
-const imageUrlFooter = "./assets/lace-trim-footer.png";
+let imageUrlFooter;
+if (window.location.pathname.includes("suggestions.html")) {
+  imageUrlFooter = "../assets/lace-trim-footer.png"; // path for suggestions.html
+} else {
+  imageUrlFooter = "./assets/lace-trim-footer.png"; // path for index.html
+}
+
 const footerContainer = document.querySelector('.lace-trim-footer-container')
 
 for (let i = 0; i < imageCount; i++){
